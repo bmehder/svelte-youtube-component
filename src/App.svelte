@@ -1,8 +1,12 @@
 <script lang="ts">
   export let id: string = 'h9MSHl40z-g'
-  export let poster: string = 'maxresdefault.jpg'
+  export let poster: string = ''
   export let title: string = 'Youtube Video'
   export let color: string = 'white'
+
+  const defaultPoster: string = 'maxresdefault.jpg'
+
+  let image: string = poster ? poster : `https://img.youtube.com/vi/${id}/${defaultPoster}`
 </script>
 
 <div class="youtube">
@@ -24,7 +28,7 @@
             top: 0;
             bottom: 0;
             margin: auto;'
-          src='https://img.youtube.com/vi/{id}/{poster}' alt='{title}'>
+          src={image} alt='{title}'>
         <svg style='
           position: absolute;
           width: 100%;
