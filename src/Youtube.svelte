@@ -58,7 +58,6 @@
 <style>
   .youtube {
     width: 100%;
-    margin: 2rem;
   }
   .youtube div {
     position: relative;
