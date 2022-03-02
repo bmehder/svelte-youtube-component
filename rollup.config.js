@@ -33,7 +33,7 @@ function serve() {
 export default {
   input: 'src/main.ts',
   output: {
-    sourcemap: true,
+    sourcemap: !production,
     format: 'iife',
     name: 'Youtube',
     file: 'public/build/youtube.js',
