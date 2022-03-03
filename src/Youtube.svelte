@@ -1,8 +1,8 @@
 <script lang="ts">
   export let id: string = 'h9MSHl40z-g'
-  export let poster: string = ''
   export let title: string = 'Youtube Video'
   export let color: string = 'white'
+  export let poster: string
 
   const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
 </script>
