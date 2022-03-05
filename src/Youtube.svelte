@@ -4,6 +4,8 @@
   export let color: string = 'white'
   export let poster: string
 
+  const bodyReset: string = '<style>body { margin: 0 }</style>'
+
   const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
 </script>
 
@@ -16,6 +18,7 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       srcdoc="
+      {bodyReset}
         <a href='https://www.youtube.com/embed/{id}?autoplay=1'>
           <img
             style='
@@ -72,5 +75,6 @@
     width: 100%;
     height: 100%;
     border: 0;
+    border-radius: 8px;
   }
 </style>
