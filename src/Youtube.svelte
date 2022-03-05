@@ -4,6 +4,7 @@
   export let color: string = 'white'
   export let poster: string
   export let radius: string = '0px'
+  export let shadow: string = 'none'
 
   const bodyReset: string = '<style>body { margin: 0 }</style>'
 
@@ -11,7 +12,7 @@
 </script>
 
 <div class="youtube">
-  <div style="border-radius: {radius};">
+  <div style="border-radius: {radius}; box-shadow: {shadow}">
     <iframe
       loading="lazy"
       {title}
