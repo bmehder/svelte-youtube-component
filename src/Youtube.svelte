@@ -3,6 +3,7 @@
   export let title: string = 'Youtube Video'
   export let color: string = 'white'
   export let poster: string
+  export let radius: string = '0px'
 
   const bodyReset: string = '<style>body { margin: 0 }</style>'
 
@@ -10,7 +11,7 @@
 </script>
 
 <div class="youtube">
-  <div>
+  <div style="border-radius: {radius};">
     <iframe
       loading="lazy"
       {title}
