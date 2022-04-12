@@ -23,14 +23,20 @@
   </head>
 
   <body>
-    <div id="youtube"></div>
+    <div id="youtube">
+      <p>I am an anchor.</p>
+    </div>
     <script>
-      Youtube(document.querySelector('#youtube'), {
-        id: 'h9MSHl40z-g',
-        title: 'Top Boy Season 2',
-        color: 'white',
-        radius: '25px',
-      })
+      Youtube(
+        document.querySelector('#youtube'),
+        {
+          id: 'h9MSHl40z-g',
+          title: 'Top Boy Season 2',
+          color: 'white',
+          radius: '25px',
+        },
+        document.querySelector('#youtube p')
+      )
     </script>
   </body>
 </html>
