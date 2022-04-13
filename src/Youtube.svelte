@@ -8,7 +8,8 @@
 
   const bodyReset: string = '<style>body { margin: 0 }</style>'
 
-  const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
+  // const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
+  const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/hqdefault.jpg`
 </script>
 
 <div class="youtube">
@@ -19,6 +20,7 @@
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
+      scrolling="no"
       srcdoc="
       {bodyReset}
         <a href='https://www.youtube.com/embed/{id}?autoplay=1'>
