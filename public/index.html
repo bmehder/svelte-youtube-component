@@ -3,12 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-
     <title>Svelte Lazy Youtube Component</title>
-
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="/build/youtube.css" />
 
+    <link rel="stylesheet" href="/build/youtube.css" />
     <script src="/build/youtube.js"></script>
 
     <style>
@@ -24,19 +22,21 @@
 
   <body>
     <div id="youtube">
-      <p>I am an anchor.</p>
+      <p>I am an anchor. The video is displayed above me.</p>
     </div>
+
     <script>
-      Youtube(
-        document.querySelector('#youtube'),
-        {
-          id: 'h9MSHl40z-g',
-          title: 'Top Boy Season 2',
-          color: 'white',
-          radius: '25px',
-        },
-        document.querySelector('#youtube p')
-      )
+      const target = document.querySelector('#youtube')
+      const anchor = document.querySelector('#youtube p')
+      const props = {
+        id: 'h9MSHl40z-g',
+        title: 'Top Boy Season 2',
+        color: 'white',
+        radius: '25px',
+        shadow: '20px 40px 80px rgba(0,0,0,0.6)',
+      }
+
+      Youtube(target, props, anchor)
     </script>
   </body>
 </html>

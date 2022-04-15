@@ -2,13 +2,12 @@
   export let id: string = 'h9MSHl40z-g'
   export let title: string = 'Youtube Video'
   export let color: string = 'white'
-  export let poster: string
+  export let poster: string = ''
   export let radius: string = '0px'
   export let shadow: string = 'none'
 
   const bodyReset: string = '<style>body { margin: 0 }</style>'
 
-  // const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/maxresdefault.jpg`
   const src: string = poster ? poster : `https://img.youtube.com/vi/${id}/hqdefault.jpg`
 </script>
 
@@ -41,11 +40,11 @@
               top: 0;
               bottom: 0;
               margin: auto;
-              filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+              filter: drop-shadow(1px 1px 5px hsl(206.5, 0%, 32%));
               transition: all 250ms ease-in-out;'
             xmlns='http://www.w3.org/2000/svg'
-            width='64'
-            height='64'
+            width='32%'
+            height='32%'
             viewBox='0 0 24 24'
             fill='none'
             stroke='{color}'
